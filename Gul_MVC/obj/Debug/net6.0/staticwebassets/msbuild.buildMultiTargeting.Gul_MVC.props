@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Gul_MVC.props" />
+</Project>
