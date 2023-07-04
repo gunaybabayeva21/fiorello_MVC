@@ -14,6 +14,9 @@ namespace Gul_MVC.DatabContext
         public DbSet<Tag> Tags { get; set; }    
         public DbSet<Catagory> catagory { get; set; }
         public DbSet<Prodact> Prodacts { get; set; }
+        public DbSet<Image> images { get; set; }
+
+        public DbSet<Setting> Settings { get; set; }
        
     }
 }

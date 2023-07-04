@@ -1,8 +1,8 @@
-﻿@model List<Catagory>
+﻿@model List<Setting>
 @{
     int count = 0;
 }
-<h1 class="h3 mb-2 text-gray-800">Category</h1>
+<h1 class="h3 mb-2 text-gray-800">Setting</h1>
 <p class="mb-4">
     DataTables is a third party plugin that is used to generate the demo table below.
     For more information about DataTables, please visit the <a target="_blank"
@@ -14,7 +14,7 @@
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
     </div>
-       <a class="btn btn-success py-2" asp-action="Create">Create</a>
+       <a class="btn btn-success py-2" asp-action="Edit">Edit</a>
     <div class="card-body">
 
         <div class="table-responsive">
@@ -22,7 +22,8 @@
                 <thead>
                     <tr>
                         <th>No:</th>
-                        <th>Name</th>
+                        <th>Key</th>
+                        <th>Value</th>
                         <th>Setting</th>
 
                     </tr>
@@ -30,22 +31,21 @@
 
                 <tbody>
 
-                    @foreach (Catagory item in Model)
+                    @foreach (Setting item in Model)
                     {
                         <tr>
                             <td>@(++count)</td>
-                            <td>@item.Name</td>
+                            <td>@item.Key</td>
+                            <td>@item.Value</td>
                             <td>
                           <div class="d-flex justify-content-around">
-                                <a asp- controller="Category" asp-action="Detail" asp-route-id="@item.Id"><button class="btn btn-info"> Detail</button></a>
-                                <form  asp-action="Update" asp-route-id="@item.Id">
+                                
+                                <form  asp-action="Edit" method="get" asp-route-id="@item.Id">
 
                                 <button class="btn btn-warning">Edit</button>
 
                                 </form>
-                                <form method="post" asp-action="Delete" asp-route-id="@item.Id">
-                                    <button class="btn btn-danger">Delete</button>
-                                </form>
+                                
                           </div>
                             </td>
                         </tr>

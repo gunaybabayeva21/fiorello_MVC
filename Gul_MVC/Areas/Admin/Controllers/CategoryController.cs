@@ -8,9 +8,7 @@ namespace Gul_MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class CategoryController:Controller
     {
-        
-
-
+       
         private readonly FiorelloDb _fiorelloDb;
 
         public CategoryController(FiorelloDb fiorelloDb)
@@ -63,7 +61,6 @@ namespace Gul_MVC.Areas.Admin.Controllers
           return View();
 
         }
-
         public async Task<IActionResult> Delete(int id)
         {
 
@@ -109,8 +106,9 @@ namespace Gul_MVC.Areas.Admin.Controllers
             _fiorelloDb.Update(catagory);
             await _fiorelloDb.SaveChangesAsync();
             return View();
-            
         }
+        
+
 
 
     }

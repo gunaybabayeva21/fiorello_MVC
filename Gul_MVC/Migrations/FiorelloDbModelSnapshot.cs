@@ -54,6 +54,31 @@ namespace Gul_MVC.Migrations
                     b.ToTable("catagory");
                 });
 
+            modelBuilder.Entity("Gul_MVC.Models.Image", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ImageName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("prodactId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("prodactId");
+
+                    b.ToTable("images");
+                });
+
             modelBuilder.Entity("Gul_MVC.Models.Prodact", b =>
                 {
                     b.Property<int>("Id")
@@ -76,6 +101,27 @@ namespace Gul_MVC.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Prodacts");
+                });
+
+            modelBuilder.Entity("Gul_MVC.Models.Setting", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Settings");
                 });
 
             modelBuilder.Entity("Gul_MVC.Models.Tag", b =>
@@ -108,6 +154,17 @@ namespace Gul_MVC.Migrations
                         .HasForeignKey("ProdactsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Gul_MVC.Models.Image", b =>
+                {
+                    b.HasOne("Gul_MVC.Models.Prodact", "prodact")
+                        .WithMany()
+                        .HasForeignKey("prodactId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("prodact");
                 });
 #pragma warning restore 612, 618
         }

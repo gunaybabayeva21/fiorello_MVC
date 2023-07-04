@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asus\\Desktop\\Gul_MVC\\Gul_MVC\\Gul_MVC.csproj": {}
+    "C:\\Users\\asus\\Desktop\\MVC\\Gul_MVC\\Gul_MVC\\Gul_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asus\\Desktop\\Gul_MVC\\Gul_MVC\\Gul_MVC.csproj": {
+    "C:\\Users\\asus\\Desktop\\MVC\\Gul_MVC\\Gul_MVC\\Gul_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\Desktop\\Gul_MVC\\Gul_MVC\\Gul_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\MVC\\Gul_MVC\\Gul_MVC\\Gul_MVC.csproj",
         "projectName": "Gul_MVC",
-        "projectPath": "C:\\Users\\asus\\Desktop\\Gul_MVC\\Gul_MVC\\Gul_MVC.csproj",
+        "projectPath": "C:\\Users\\asus\\Desktop\\MVC\\Gul_MVC\\Gul_MVC\\Gul_MVC.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\Desktop\\Gul_MVC\\Gul_MVC\\obj\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\MVC\\Gul_MVC\\Gul_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

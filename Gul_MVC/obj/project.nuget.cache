@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "shL6+PIoQOi0czR5XCIDEY+RSeZvVOGjH9rKXSuMxEe0bhy5/orNk01xLMhHCf3OwBTulCMQJjMYHbc5S9DRog==",
+  "dgSpecHash": "okSO8P1ONTnVd94w6fV1P599hvpb6Mtnps+8EUW0PlIDwCDeqsR6o5GEIrD8AF5LsgyaM+XSRq8qDuNSeU1F2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\asus\\Desktop\\Gul_MVC\\Gul_MVC\\Gul_MVC.csproj",
+  "projectFilePath": "C:\\Users\\asus\\Desktop\\MVC\\Gul_MVC\\Gul_MVC\\Gul_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
